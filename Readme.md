@@ -70,4 +70,6 @@ https://mesonbuild.com/Quick-guide.html
 https://gitlab.freedesktop.org/gstreamer/gstreamer/-/blob/main/.vscode/launch.json
 https://www.collabora.com/news-and-blog/blog/2023/04/18/meson-and-vscode-develop-your-project-modern-ide/
 https://wiki.gnome.org/Projects/Vala/ValaOnWindows
+https://wiki.gnome.org/Projects/Vala/TestSample
+https://github.com/syfds/vala-meson-unit-test-sample/tree/master
 ```
