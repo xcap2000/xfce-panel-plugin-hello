@@ -1,5 +1,5 @@
-sources = files(
+base_source_files = files(
     'GreetingService.vala'
 )
 
-sources_with_main = sources + files('Main.vala')
+source_files = base_source_files + files('Main.vala')

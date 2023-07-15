@@ -1,7 +1,7 @@
-int main (string[] args)
+int main(string[] args)
 {
-    var service = new GreetingService ("James Bond");
+    var service = new GreetingService("James Bond");
     var message = service.greet();
-    stdout.printf (@"$message!\n");
+    stdout.printf(@"$message!\n");
     return 0;
 }

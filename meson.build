@@ -17,7 +17,7 @@ subdir('test')
 
 executable(
     meson.project_name(),
-    sources: sources_with_main,
+    sources: source_files,
     dependencies: dependencies,
     install: true
 )
