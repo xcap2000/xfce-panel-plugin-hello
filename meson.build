@@ -1,7 +1,9 @@
-project('xfce-panel-plugin-hello', 'c', 'vala')
-
-sources = files(
-    'main.vala'
+project(
+    'xfce-panel-plugin-hello',
+    'c',
+    'vala',
+    version: '0.1.0',
+    meson_version: '>=1.0.1'
 )
 
 dependencies = [
@@ -10,4 +12,12 @@ dependencies = [
     dependency('gtk+-3.0')
 ]
 
-executable('xfce-panel-plugin-hello', sources, dependencies: dependencies)
+subdir('src')
+subdir('test')
+
+executable(
+    meson.project_name(),
+    sources: sources_with_main,
+    dependencies: dependencies,
+    install: true
+)

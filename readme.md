@@ -32,7 +32,7 @@ int main (string[] args) {
 Run the following command to initialize build directory:
 
 ```bash
-$ meson build
+$ meson setup build
 ```
 
 Run the following to build:
