@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "eamodio.gitlens",
+        "ow.vscode-subword-navigation",
+        "amodio.toggle-excluded-files",
+        "oderwat.indent-rainbow",
+        "vadimcn.vscode-lldb",
+        "prince781.vala",
+        "mesonbuild.mesonbuild"
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "src: compile",
+            "type": "process",
+            "group": "build",
+            "command": "meson",
+            "isBackground": true,
+            "windows": {
+                "args": [
+                    "compile",
+                    "-C",
+                    "${workspaceFolder}\\build"
+                ]
+            },
+            "linux": {
+                "args": [
+                    "compile",
+                    "-C",
+                    "${workspaceFolder}/build"
+                ]
+            },
+            "problemMatcher": [
+                "$valac"
+            ],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "src: test",
+            "type": "process",
+            "group": "build",
+            "command": "meson",
+            "isBackground": true,
+            "windows": {
+                "args": [
+                    "test",
+                    "-C",
+                    "${workspaceFolder}\\build"
+                ]
+            },
+            "linux": {
+                "args": [
+                    "test",
+                    "-C",
+                    "${workspaceFolder}/build"
+                ]
+            },
+            "problemMatcher": [
+                "$valac"
+            ],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "src: run",
+            "type": "shell",
+            "group": "build",
+            "isBackground": true,
+            "windows": {
+                "command": "${workspaceFolder}\\build\\xfce-panel-plugin-hello"
+            },
+            "linux": {
+                "command": "${workspaceFolder}/build/xfce-panel-plugin-hello"
+            },
+            "presentation": {
+                "reveal": "always"
+            },
+            "dependsOn": "src: compile"
+        }
+    ]
+}
