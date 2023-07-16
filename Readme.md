@@ -3,7 +3,7 @@
 ## Prerequisites
 
 ```bash
-$ sudo apt install libxfce4panel-2.0-dev
+$ sudo apt install exo-utils libexo-2-0 libexo-common libgarcon-1-0 libgarcon-common libxfce4panel-2.0-4 libxfce4panel-2.0-dev libxfce4ui-2-0 libxfce4ui-common libxfce4util7 libxfce4util-common libxfce4util-dev libxfconf-0-dev xfce4-panel xfconfguint
 ```
 
 ## Creating the project
@@ -78,4 +78,8 @@ https://www.collabora.com/news-and-blog/blog/2023/04/18/meson-and-vscode-develop
 https://wiki.gnome.org/Projects/Vala/ValaOnWindows
 https://wiki.gnome.org/Projects/Vala/TestSample
 https://github.com/syfds/vala-meson-unit-test-sample/tree/master
+https://github.com/rilian-la-te/vala-panel-appmenu/tree/master
 ```
+
+
+sudo apt install exo-utils libexo-2-0 libexo-common libgarcon-1-0 libgarcon-common libxfce4panel-2.0-4 libxfce4panel-2.0-dev libxfce4ui-2-0 libxfce4ui-common libxfce4util7 libxfce4util-common libxfce4util-dev libxfconf-0-dev xfce4-panel xfconfguint
