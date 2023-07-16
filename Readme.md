@@ -80,3 +80,10 @@ https://wiki.gnome.org/Projects/Vala/TestSample
 https://github.com/syfds/vala-meson-unit-test-sample/tree/master
 https://github.com/rilian-la-te/vala-panel-appmenu/tree/master
 ```
+
+Register plugin examples:
+
+```
+https://github.com/rilian-la-te/vala-panel-appmenu/blob/master/applets/xfce4-plugin-appmenu.vala
+https://github.com/rilian-la-te/xfce4-sntray-plugin/blob/master/src/panels/xfce4-sntray-applet.vala
+```
