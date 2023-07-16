@@ -1,5 +1,11 @@
 # XFCE Panel Plugin Hello
 
+## Prerequisites
+
+```bash
+$ sudo apt install libxfce4panel-2.0-dev
+```
+
 ## Creating the project
 
 Create a meson.build file with the following contents:
