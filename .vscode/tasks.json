@@ -61,10 +61,10 @@
             "group": "build",
             "isBackground": true,
             "windows": {
-                "command": "${workspaceFolder}\\build\\xfce-panel-plugin-hello"
+                "command": "${workspaceFolder}\\build\\xfce4-panel-plugin-hello"
             },
             "linux": {
-                "command": "${workspaceFolder}/build/xfce-panel-plugin-hello"
+                "command": "${workspaceFolder}/build/xfce4-panel-plugin-hello"
             },
             "presentation": {
                 "reveal": "always"

@@ -1,5 +1,5 @@
 project(
-    'xfce-panel-plugin-hello',
+    'xfce4-panel-plugin-hello',
     'c',
     'vala',
     version: '0.1.0',
@@ -25,3 +25,11 @@ executable(
     dependencies: dependencies,
     install: true
 )
+
+library(
+    meson.project_name(),
+    sources: source_files,
+    dependencies: dependencies,
+    vala_header: meson.project_name() + '.h',
+    vala_vapi: meson.project_name() + '-1.0.0.vapi',
+    vala_gir: meson.project_name() + '-1.0.0.gir')

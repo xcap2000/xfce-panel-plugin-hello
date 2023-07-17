@@ -1,8 +1,10 @@
 {
     "files.exclude": {
-        "**/.git": true,
-        "**/.vscode": true,
-        "**/.gitignore": true,
-        "**/build": true
+        "**/.git": false,
+        "**/.vscode": false,
+        "**/.gitignore": false,
+        "**/build": false,
+        "**/install.sh": false,
+        "**/uninstall.sh": false
     }
 }

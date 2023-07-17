@@ -1,16 +1,19 @@
 using GLib;
 
-public class GreetingService : Object
+namespace Plugin
 {
-    private string name;
-
-    public GreetingService(string name)
+    public class GreetingService : Object
     {
-        this.name = name;
-    }
+        private string name;
 
-    public string greet()
-    {
-        return @"Hello $name!";
+        public GreetingService(string name)
+        {
+            this.name = name;
+        }
+
+        public string greet()
+        {
+            return @"Hello again $name!";
+        }
     }
 }

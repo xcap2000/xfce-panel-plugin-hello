@@ -1,3 +1,5 @@
+using Plugin;
+
 int main(string[] args)
 {
     var service = new GreetingService("James Bond");

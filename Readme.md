@@ -11,7 +11,7 @@ $ sudo apt install exo-utils libexo-2-0 libexo-common libgarcon-1-0 libgarcon-co
 Create a meson.build file with the following contents:
 
 ```meson
-project('xfce-panel-plugin-hello', 'c', 'vala')
+project('xfce4-panel-plugin-hello', 'c', 'vala')
 
 sources = = files(
     'main.vala'
@@ -23,7 +23,7 @@ dependencies = [
     dependency('gtk+-3.0')
 ]
 
-executable('xfce-panel-plugin-hello', sources, dependencies: dependencies)
+executable('xfce4-panel-plugin-hello', sources, dependencies: dependencies)
 ```
 
 Create a foo.vala file with the following contents:
@@ -62,10 +62,40 @@ $ meson test
 To run the application:
 
 ```bash
-$ ./build/xfce-panel-plugin-hello
+$ ./build/xfce4-panel-plugin-hello
 # or
 $ cd build
-$ ./xfce-panel-plugin-hello
+$ ./xfce4-panel-plugin-hello
+```
+
+## Testing the plugin
+
+```bash
+$ sudo cp /home/carlos/Projects/Personal/xfce-panel-plugin-hello/build/libxfce4-panel-plugin-hello.so /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4-panel-plugin-hello.so
+$ sudo cp /home/carlos/Projects/Personal/xfce-panel-plugin-hello/src/xfce4-panel-plugin-hello.desktop.in to /usr/share/xfce4/panel/plugins/xfce4-panel-plugin-hello.desktop
+$ sudo chmod 644 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4-panel-plugin-hello.so
+$ xfce4-panel -r
+```
+Or
+```bash
+$ chmod +x install.sh
+$ sudo ./install.sh
+$ xfce4-panel -r
+```
+
+## Clear System
+
+```bash
+$ sudo rm -rf /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4-panel-plugin-hello.so
+$ sudo rm -rf /usr/share/xfce4/panel/plugins/xfce4-panel-plugin-hello.desktop
+# Remove plugin from panel and:
+$ xfce4-panel -r
+```
+Or
+```bash
+$ chmod +x uninstall.sh
+$ sudo ./uninstall.sh
+$ xfce4-panel -r
 ```
 
 ## References
