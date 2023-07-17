@@ -6,7 +6,7 @@ namespace Plugin
     {
         var service = new GreetingService("James Bond");
         
-        assert (service.greet () == "Hello again James Bond!");
+        assert (service.greet () == "Hello James Bond!");
     }
     
     public int main (string[] args)

@@ -13,7 +13,7 @@ namespace Plugin
 
         public string greet()
         {
-            return @"Hello again $name!";
+            return @"Hello $name!";
         }
     }
 }
